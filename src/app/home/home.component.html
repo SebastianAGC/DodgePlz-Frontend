@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dodge Plz</title>
+</head>
+<body>
+<div class="main">
+  <h1>DODGE PLZ</h1>
+
+  <form #frmCheckDodge="ngForm" (ngSubmit)="checkDodge(frmCheckDodge)">
+    <div class="addItem">
+      <label>Should you dodge this match?</label>
+      <input type="text" name="player" placeholder="Enter summoner's name or chat text" class="addText" ngModel required>
+      <input class="button" type="submit" value="Save me">
+    </div>
+    <div id="dodgeMessageDiv"></div>
+  </form>
+
+  <form #frmUpdatePlayers="ngForm" (ngSubmit)="updatePlayer(frmUpdatePlayers)">
+    <div class="addItem">
+      <label>Save the players you want to dodge next time</label>
+      <input type="text" name="player" placeholder="Enter summoner's name or chat text" class="addText" ngModel required>
+      <input class="button" type="submit" value="Add">
+    </div>
+    <ul>
+      <li *ngFor="let player of players">
+        {{player}}
+        <span (click)="deletePlayer(player)">x</span>
+      </li>
+    </ul>
+  </form>
+</div>
+
+<footer>
+  <p>Author: Sebastián Galindo</p>
+  <p>Version: 1.0.0</p>
+  <p>Inquiries, comments or bug reports at <a href="www.gmail.com">gamersgc97@gmail.com</a></p>
+</footer>
+</body>
+</html>

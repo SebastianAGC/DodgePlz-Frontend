@@ -1,0 +1,79 @@
+/*HOME*/
+
+.main{
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+h1{
+  text-align: center;
+  background-color: #d4d4d4;
+  padding: 30px 0px;
+  margin-top: 0px;
+}
+
+ul{
+  list-style: none;
+  font-size: 20px;
+  color: #6B6B6B;
+  margin-left: -40px;
+  margin-bottom: 0px;
+}
+
+li {
+  border-bottom: 1px solid #ededed;
+  background-color: #f4f4f4;
+  padding: 10px 0px;
+  margin-bottom: 5px;
+}
+
+li span {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+
+.addItem {
+  margin-top: 50px;
+  position: relative;
+  padding-bottom: 0px;
+  height: 30px;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.dodgeMessageTrue {
+  margin: 50px;
+  color: red;
+  font-size: xx-large;
+}
+
+.dodgeMessageFalse {
+  margin: 50px;
+  color: lawngreen;
+  font-size: xx-large;
+}
+
+.addText {
+  width: 80%;
+  height: 30px;
+}
+
+.addItem .button {
+  height: 35px;
+  width: 70px;
+}
+
+footer {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
